@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/home','HomeController@Home');
 
-Route::get('/register', function () {
+Route::get('/sign-up', function () {
     return view('register');
 });
+Route::post('/register', 'AuthController@register');
